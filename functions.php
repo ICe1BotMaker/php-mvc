@@ -6,3 +6,11 @@ function user() {
         return false;
     }
 }
+
+function is_admin() {
+    if (user() && user()->id == "admin") {
+        return true;
+    } else {
+        return false;
+    }
+}
